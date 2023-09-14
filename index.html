@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Import of local CSS file-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mt-4 p-5 bg-primary text-white text-center rounded">
+        <h1>Min Bootstrapsida</h1> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+    </div>
+    
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4">
+                <h1>My Title</h1>
+            </div>
+
+            <div class="col-sm">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non labore dolore veritatis iusto? Quis corrupti debitis voluptate dicta ad delectus assumenda repellendus voluptatem, earum, iste non, dolores quo autem.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <h1>Min titel</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo vel voluptas debitis deserunt animi, ipsa omnis ducimus dolorum aliquam temporibus dolor quae eligendi, aliquid fuga repellendus placeat natus asperiores?</p>
+    </div>
+
+
+    <!-- Row inuti en Column -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Skapa en ny Row inuti detta fält -->
+                <div class="row">
+                    <div class="col-md">
+                        <p>Det första innre fältet</p>
+                    </div>
+                    <div class="col-md">
+                        <p>Det andra innre fältet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p>Litet fält</p>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary list-group-item-action">Första objektet</li>
+                    <li class="list-group-item list-group-item-warning">Andra objektet</li>
+                    <li class="list-group-item list-group-item-danger">Tredje objektet</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>bottom row</p>
+        </div>
+    </div>
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, consectetur natus et illo quisquam numquam quae animi odio inventore ex autem molestiae delectus ut magnam, rem aliquid dolor culpa nostrum!
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Box continaing CSSGrid and Flexbox -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="gridContainer">
+                    <div class="item1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate nobis repellat, ducimus tempora eum saepe atque quam illo harum placeat repellendus eligendi exercitationem dolores corporis, numquam recusandae provident laborum!
+                    </div>
+                    <div class="item2">
+                        Vänster box text
+                    </div>
+                    <div class="item2-2">
+                        Höger box text
+                    </div>
+                    <div class="itemBigBox">
+                        Detta är en Big box som sträcker sig flera rader coh kolumner. Det finns innehåll vid sidorna
+                    </div>
+                    <div class="itemTopLeft">
+                        Top left of Big Box
+                    </div>
+                    <div class="itemBottomLeft">
+                        Bottom left of Big Box
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="outerFlexContainer">
+                    <div class="innerFlexContainer inner1">
+                        <div class="flexItem" style="order: 2;">Between</div>
+                        <img src="imgs/cat.jpg" alt="" class="flexItem" style="order: 1;">
+                        <img src="imgs/cat.jpg" alt="" class="flexItem" style="order: 3;">
+                    </div>
+                    <div class="innerFlexContainer inner2">
+                        <div class="flexItem">Around</div>
+                        <img src="imgs/cat.jpg" alt="" class="flexItem">
+                        <img src="imgs/cat.jpg" alt="" class="flexItem">
+                    </div>
+                    <div class="innerFlexContainer inner3">
+                        <div class="flexItem">Evenly</div>
+                        <img src="imgs/cat.jpg" alt="" class="flexItem">
+                        <img src="imgs/cat.jpg" alt="" class="flexItem">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
